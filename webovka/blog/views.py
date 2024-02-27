@@ -5,6 +5,6 @@ import random
 
 # Create your views here.
 
-def model_list(request):
+def post_list(request):
     random_number = random.randint(1, 100)
-    return HttpResponse(F'Random number { random_number}')
+    return render(request, 'blog/post_list.html', {random_number})
