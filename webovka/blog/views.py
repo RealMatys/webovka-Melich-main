@@ -7,4 +7,4 @@ import random
 
 def post_list(request):
     random_number = random.randint(1, 100)
-    return render(request, 'blog/post_list.html', {random_number})
+    return render(request, 'blog/post_list.html', {'var': random_number})
